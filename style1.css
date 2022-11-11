@@ -1,0 +1,72 @@
+*{
+    padding:0px;
+    box-sizing: border-box;
+    margin: 0;
+  }
+
+
+  body {
+    font-family:'montserrant';
+  }
+
+
+  .container{
+    width:90%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: rgb(201, 198, 194);
+    border-radius: 8px;
+    margin-bottom: 20px;
+    justify-content: center;
+  }
+  
+
+  form{
+      color: aqua;
+      display: flex;
+    flex-direction: column;
+    padding: 2vw 4vw;
+    max-width: 600px;
+    width:100%;
+    margin-top: 20px;
+    font-size: 15px;
+  }
+
+  form input,form textarea{
+      border: 0;
+      margin: 10px 0;
+      padding:20px;
+      outline: none;
+      background-color: beige;
+      font-size: 16px ;
+  }
+  
+
+  form button[type="submit"]{
+    width:100%;
+    border: whitesmoke;
+    outline: none;
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 8px;
+    font-family:'montserrant' ;
+    color: blue;
+    text-align:center ;
+    cursor: pointer;
+    margin-top: 10px;
+    
+
+  }
+  button[type="submit"]:hover{
+    background-color: rgb(144, 144, 194);
+  }
+
+  p{
+      font-size: xx-small;
+      color: black;
+      text-align: right;
+      text-decoration:underline ;
+  }
+
+

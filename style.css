@@ -1,0 +1,113 @@
+*{
+    padding:5px;
+    box-sizing: border-box;
+    margin: 0;
+  }
+
+
+  body {
+    font-family:'montserrant';
+  }
+
+
+  section{
+    height: 180vh;
+    width: 110%;
+    background-color: rgb(122, 118, 118);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+
+  .container{
+    width:90%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: rgb(201, 198, 194);
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+
+  .form-group{
+    width:100%;
+    margin-top: 20px;
+    font-size: 25px;
+  }
+
+
+  .form-goup input,
+  .form-group textarea{
+    width:100%;
+    padding:5px;
+    font-size: 18px;
+    border: 1px solid white;
+    margin-top: 5px;
+  }
+
+
+  textarea{
+    resize: none;
+  }
+
+  button[type="submit"]{
+    width:100%;
+    border: whitesmoke;
+    outline: none;
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 8px;
+    font-family:'montserrant' ;
+    color: blue;
+    text-align:center ;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: .3s ease background-color;
+
+  }
+  button[type="submit"]:hover{
+    background-color: rgb(144, 144, 194);
+  }
+  #status{
+    width: 90px;
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+    border-radius: 8px;
+  }
+
+  #status.success{
+    background-color: rgb(105, 221, 105);
+  }
+  #status.error{
+    background-color: rgb(221, 29, 29);
+    color: black;
+  }
+
+
+  button[type="reset"]{
+    width:100%;
+    border: whitesmoke;
+    outline: none;
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 8px;
+    font-family:'montserrant' ;
+    color: rgb(235, 220, 10);
+    text-align:center ;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: .3s ease background-color;
+  }
+  button[type="reset"]:hover{
+    background-color: rgb(230, 236, 147);
+  }
+
+  p{
+    text-decoration: underline;
+    text-align: right;
+    font-size:xx-small;
+  }

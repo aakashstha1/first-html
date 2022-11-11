@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Form </title>
+        <link rel="stylesheet" href="style1.css">
+    </head>
+    <body>
+        <div class="container">
+            <form onsubmit=" sendEmail(); reset(); return false;">
+                <h2><b>Please Enter your Details</b></h2>
+                <input type="text" id="name" placeholder="Your Name" requird>
+                <input type="email" id="email" placeholder="Email ID" requird>
+                <input type="number" id="phone" placeholder="phone no." requird>
+                <textarea id="message" row="4" placeholder="How can we help you?"></textarea>
+                
+                <button type="submit">Send</button><br>
+                <p><b><i>ASN</i></b></p>
+            </form>
+        </div>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+        <script>
+            function sendEmail(){
+            Email.send({
+           Host : "smtp.gmail.com",
+           Username : "aakuakan.90@gmail.com",
+           Password : "aakashrestha",
+           To : 'lastsoulff01@gmail.com',
+           From : document.getElementById("email").value,
+            Subject : "New contact from Enquiry",
+           Body : "And this is the body"
+        }).then(
+      message => alert(message)
+      );
+            }
+        </script>
+    </body>
+</html>
+
